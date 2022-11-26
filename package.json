@@ -1,14 +1,14 @@
 {
-  "name": "nextra",
+  "name": "joanbosch-learn",
   "version": "1.0.0",
-  "description": "",
+  "description": "Learning Platform for Joan Bosch",
   "main": "index.js",
   "scripts": {
     "dev": "next",
     "start": "next start",
     "build": "next build"
   },
-  "author": "Shu Ding",
+  "author": "Joan Bosch Pons",
   "license": "MIT",
   "dependencies": {
     "next": "^12.1.0",
