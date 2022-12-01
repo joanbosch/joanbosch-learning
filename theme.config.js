@@ -1,6 +1,6 @@
 export default {
   github: 'https://github.com/joanbosch/joanbosch-learning',
-  docsRepositoryBase: 'https://github.com/joanbosch/joanbosch-learning/blob/master',
+  docsRepositoryBase: 'https://github.com/joanbosch/joanbosch-learning/blob/main',
   titleSuffix: '',
   logo: (
     <>
@@ -63,6 +63,6 @@ export default {
   footer: true,
   darkMode: true,
   footerEditLink: 'Edita aquesta pàgina a GitHub',
-  footerText: <>CC {new Date().getFullYear()} © Joan Bosch Pons</>,
+  footerText: <>CC {new Date().getFullYear()} © <a href="https://joanbosch.dev">Joan Bosch Pons</a></>,
   unstable_faviconGlyph: '🚀',
 }
