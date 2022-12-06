@@ -16,7 +16,18 @@ Un exemeple de lectura de dades amb Python pot ser el següent:
 nom = input()
 ```
 
-No cal preocupar-se del tipus de dada que ha d'introduïr l'usuari, llavors Python li assignarà automàticament en fució del valor d'entrada.
+Ara bé, la funció `input()` sempre retorna un valor de tipus text. Si volem que el valor d'entrada sigui d'un altre tipus (com enter o real) haurem de fer servir les funcions `int()` o `double()` respectivament. 
+Vegem un exemple:
+```python
+# El valor de la variable edat és de tipus text
+edat = input()
+
+# El valor de la variable edat ´és de tipus enter
+edat = int(input())
+
+# El valor de la variable edat ´és de tipus real (números decimals)
+edat = double(input())
+```
 
 ## Sortida o escriptura de dades
 
