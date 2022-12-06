@@ -4,7 +4,7 @@ import Callout from 'nextra-theme-docs/callout'
 # Operadors
 
 <Callout emoji="">
-  Els operadors són símbols que indiquen a l'intèrpret que realitzi una operació específica. Tot i que existeixen multitud d'operadors, en aquest curs ens centrarem amb els operadors aritmétics, lógics i de comparació.
+  Els operadors són símbols que indiquen a l'intèrpret que realitzi una operació específica. Tot i que existeixen multitud d'operadors, en aquest curs ens centrarem amb els operadors aritmétics, lógics i racionals (o de comparació).
 </Callout>
 
 ## Operadors aritmétics
@@ -16,18 +16,44 @@ A continuació podem veure els operadors aritmètics més comuns:
 
 | Operador        | Descripció |Ús |
 | :------------: | :---------: | :----------: |
-|+|Realitza una suma entre els operands| `2 + 2 # 4` |
-|-|Realitza una resta entre els operands| `2 - 2 # 0` |
-|*|Realitza una multiplicació entre els operands        | `2 * 2 # 4` |
-|/|Realitza una divisió entre els operands | `2 / 2 # 1` |
-|%|Realitza un módul entre els operands| `4 % 2 # 0` |
-|**|Realitza la poténcia dels operands| `2 ** 3 # 8` |
-|//|realitza una divisió dels operands amb un resultat enter| `3 // 2 # 1` |
+|`+`|Realitza una suma entre els operands| `2 + 2 ` |
+|`-`|Realitza una resta entre els operands| `2 - 2` |
+|`*`|Realitza una multiplicació entre els operands        | `2 * 2 ` |
+|`/`|Realitza una divisió entre els operands | `2 / 2` |
+|`%`|Realitza un módul entre els operands| `4 % 2 ` |
+|`**`|Realitza la poténcia dels operands| `2 ** 3 ` |
+|`//`|realitza una divisió dels operands amb un resultat enter| `3 // 2 ` |
 
 
 
-## Operadors lógics
+## Operadors lògics
+Els operadors lògics són aquells que ens ajuden a executar operacions lògiques. Són utilitzats per prendre decisions basades en múltiples condicions. En conseqüència, un operador lògic agafa dos operands d'entrada, realitza un càlcul i retorna un valor booleà (`true` o `false`) en funció de la condició.
+Els operadors lògics s'utilitzen amb variables amb dades de tipus booleà.
+
+Per exemple, considerem l'expressió ` res = true and false `. En aquest cas,`true` i `false` són els operands i `and` és l'operador lògic. El resultat de l'operació es guarda a la variable `res`.
+
+A continuació podem veure els operadors lògics més comuns:
+
+| Operador        | Descripció |Ús |
+| :------------: | :---------: | :----------: |
+|`and` |Retorna `true` si ambdós operands són `true`| `a and b` |
+|`or` |Retorna `true` si algún dels operands és `true`| `a or b` |
+|`not` |Retorna `true` si algún dels operands és `false`| `not a` |
 
 
+## Operadors racionals
 
-## Operadors de comparació
+Els operadors racionals (o de comparació) són aquells que ens ajuden a executar operacions racionals. Un operador racional s'utilitza per comparar i establir la relació entre ells. Llavors, retornen un valor booleà (`true` o `false`) en funció de la condició. En conseqüència, un operador racional agafa dos operands d'entrada, realitza un càlcul i retorna el seu resultat booleà.
+
+Per exemple, considerem l'expressió ` res = 1 == 2 `. En aquest cas,`1` i `2` són els operands i `==` és l'operador racional. El resultat de l'operació es guarda a la variable `res`.
+
+A continuació podem veure els operadors racionals més comuns:
+
+| Operador        | Descripció |Ús |
+| :------------: | :---------: | :----------: |
+|`>` |Retorna `true` si l'operador de l'esquerra es major que l'operador de la dreta| `a > b` |
+|`<` |Retorna `true` si l'operador de la dreta es major que l'operador de l'esquerra| `a < b` |
+|`==` |Retorna `true` si els dos operadors són iguals| `a == b` |
+|`>=` |Retorna `true` si l'operador de l'esquerra es major o igual que l'operador de la dreta| `a >= b` |
+|`<=` |Retorna `true` si l'operador de la dreta es major o igual que l'operador de l'esquerra | `a <= b` |
+|`!=` |Retorna `true` si els operadors són diferents| `a != b` |
