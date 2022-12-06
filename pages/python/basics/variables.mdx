@@ -2,3 +2,58 @@ import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 
 # Variables
+
+<Callout emoji="">
+  Les variables són un pilar fonamental de qualssevol programa. Una variable, és una manera d'identificar una dada que es troba emmagatzemada a la memória del computador. Llavors, de forma més abstracta, podriem dir que una variable és un 'calaix' on anem guardant el que sigui necessari.
+  Les variables ens aporten la facilitat d'accedir a les dades d'un programa.
+</Callout>
+
+Per exemple, suposem que volem que el nostre programa mostri el resultat de la suma 2 + 2. Llavors, podriem guardar el resultat d'aquesta operació a una variable i llavors escriure el seu valor:
+
+```python
+suma = 2 + 2
+print(suma)
+```
+
+## Com declarar una variable
+Per decalarar una variable en Python, simplement cal escriure el nom d'aquesta dins del codi del nostre programa:
+
+```python
+# Declarar la variable suma
+suma 
+```
+
+## Com assignar un valor a una variable
+Per assignar un valor a una variable s'utilitza el símbol `=`:
+
+```python
+# Declarar la variable 'suma'
+suma 
+# Assignar el valor 1 a la variable 'suma'
+suma = 1
+```
+
+També podem declarar i assignar un valor directament a les nostres variables. Això ens permet estalviar línies de codi:
+```python
+# Declarar  la variable 'suma' i assignar-li el valor 1
+suma = 1
+```
+
+## Modificar-ne el valor 
+Cada cop que assignem un nou valor a una variable, li estem modificant el seu valor. Llavors, utilitzant el símbol `=` podem modificar-ne el seu valor.
+<Callout type="warning">
+  En Python, el tipus de dades d'una variable pot canviar en temps d'execució (és a dir, mentre s'està executant el nostre codi). Vegem el següent exemple:
+</Callout>
+
+  ```python
+  # Declarar la variable 'num' de tipus int
+  num = 1
+  print(type(num))
+  <class 'int'>
+
+  # Assigmen a la variable num un text
+  num = 'un'
+  print(type(num))
+  <class 'str'>
+  
+  ```
