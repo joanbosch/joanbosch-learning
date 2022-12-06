@@ -2,3 +2,40 @@ import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 
 # Entrada/Sortida de dades
+
+L'entrada i sortida de dades en qualssevol programa és essencial per estar connectat amb l'exterior. Quin sentit té que un programa faci càlculs si llavors l'usuari no en pot saber el resultat?.
+En aquest apartat, mostrarem com podem introduïr y escriure dades al nostre programa amb Python.
+
+## Entrada o lectura de dades
+En Python, la lecutra de dades és molt simple. Per fer-ho s'utilitza la funció `input()`. Quan s'executa aquesta funció, es genera una interrució al programa, esperant una resposta per part de l'usuari pel canal principal d'entrada de dades (normalment la terminal o consola on s'està executant el codi del programa).
+
+Un exemeple de lectura de dades amb Python pot ser el següent:
+
+```python
+# El text introduït per l'usuari quedarà guardat a la variable nom
+nom = input()
+```
+
+No cal preocupar-se del tipus de dada que ha d'introduïr l'usuari, llavors Python li assignarà automàticament en fució del valor d'entrada.
+
+## Sortida o escriptura de dades
+
+Com ja s'ha mostrat en anteriors apartats, el mètode d'escriptura de dades a la consola d'execució és executant la funció `print()` que ens ofereix Python. Dins els parèntesis de la funció, haurem d'introduir el text que volem que s'escrigui.
+
+Un exemple d'escriptura de dades amb Python pot ser el següent:
+```python
+print('Hola món!')
+```
+També es poden barrejar tant entrada com sortida de dades. Vegem un exemple:
+```python
+print("Hola! Això és un exemple amb Python")
+
+print("Escriu el teu nom: ")
+
+# La función print(), mostra els missatges en línies separades
+
+# Ara llegim el nom amb input() i l'assignem a una variable
+nombre = input()
+
+print("Benvingut al sistema "+ nombre + ". Gràcies per fer servir el meu programa.")
+```
