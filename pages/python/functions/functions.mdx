@@ -3,6 +3,60 @@ import Callout from 'nextra-theme-docs/callout'
 
 # Funcions
 
-<Callout type="warning">
-  Working on it...
+<Callout emoji="">
+ Una **funció** és un subprograma que, a partir de diverses entrades, calcula un resultat i el retorna. Les funcions ens serveixen per evitar la repetició de codi quan necessitem executar certes accions comunes (com la suma de dos valors, etc.). A escala abstracta, ens podem imaginar una funció com una màquina o caixa negra que transforma entrades amb unes sortides concretes. Al contrari que amb el programa, les funcions normalment no tenen interacció d'entrada i/o sortida amb l'usuari. Les funcions sempre acaben amb la clàusula `return` que retorna el valor desitjat.
 </Callout>
+
+Per definir una funció amb Python se segueix la següent estructura:
+
+```python
+def ⟨nom_funció⟩(⟨paràmetres⟩) -> <tipus_retorn>:
+    ⟨instruccions⟩
+```
+**El nombre de paràmetres no té límit.** Podem definir tants paràmetres com volem i del tipus que volem. No hi ha restriccions. Així mateix, podem definir tantes funcions que siguin necessàries. Tampoc tenim límit en aquest sentit.
+
+## Exemples
+
+Un exemple d'una funció que rep dos números i retorna la seva suma podria ser la següent:
+
+```python
+def add(a: int, b: int) -> int:
+  sum = a + b
+  return sum
+```
+
+Un altre exemple podria ser una funció per obtenir el màxim de dos números:
+```python
+def max(a: int, b: int) -> int:
+  m = 0
+  if a > b:
+    m = a
+  else:
+    m = b
+  return m
+```
+
+## Com cridar una funció dins del programa?
+Per poder executar la funció que hem programat, cal cridar-la pel seu nom de dins del codi del nostre programa un cop ja tenim la funció definida al capdamunt d'aquest. Vegem un exemple:
+
+```python
+def max(a: int, b: int) -> int:
+  m = 0
+  if a > b:
+    m = a
+  else:
+    m = b
+  return m
+
+entrada = input().split()   # L'usuari introdueix dos números separats per un espai Ex: 12 14
+llista = [int(item) for item in entrada]
+primer = llista[0]  # Primer element que l'usuari ha introduït
+segon = llista[1]   # Segon element que l'usuari ha introduït
+
+# Executem la funció per saber quin és el número més gran que l'usuari ha introduït. 
+# El resultat queda guardat a la variable num.
+num = max(primer, segon)
+
+print("El número més gran és " + str(num))
+```
+
